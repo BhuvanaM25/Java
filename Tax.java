@@ -2,11 +2,11 @@ import java.util.Scanner;
 class Tax{
     public static void main(String[] args){
         Scanner s=new Scanner(System.in);
-        System.out.println("Enter Monthly Income:");
+        System.out.println("Enter the monthly income");
         double income=s.nextDouble();
         income=income*12;
         double taxAmount=tax(income);
-        System.out.println("Tax Amount is: "+ taxAmount);
+        System.out.println("Tax is: "+ taxAmount);
     }
 public static double tax(double income){
     if(income<=250000){
